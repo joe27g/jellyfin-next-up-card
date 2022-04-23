@@ -1,6 +1,8 @@
 # jellyfin-next-up-card
 A card for Home Assistant that displays TV shows to resume watching.
 
+![image](https://user-images.githubusercontent.com/20873239/164947368-155f7e91-7b64-417a-8707-109615248683.png)
+
 There are two main parts to getting this card to work: creating the REST sensors and importing/configuring the card itself.
 
 ## Setting up the REST sensors
