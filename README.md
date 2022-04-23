@@ -43,6 +43,7 @@ There are two main parts to getting this card to work: creating the REST sensors
 - Add the card using the example YAML config below.
   - Replace `<jellyfin-host>` with your Jellyfin domain or IP:port, just like in the REST sensor setup.
   - If you have a Roku, replace `<roku-id>` with your Roku's entity ID, i.e. `media_player.bedroom_tv`. If you don't, delete the line or set the value to `''`.
+    - Set the `default_player` to determine which button appears first ~~and which player to use when clicking on the episode thumbnail/details~~ (coming soon.)
 
 ```yaml
 type: custom:jellyfin-next-up-card
@@ -51,7 +52,7 @@ include_resume: true
 resume_sensor: sensor.jellyfin_resume
 show_thumbnails: true
 jellyfin_host: <jellyfin-host>
-default_player: roku
+default_player: web
 roku_entity_id: <roku-id>
 hide_play_button: false
 show_runtime: true
